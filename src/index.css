@@ -106,7 +106,7 @@
 
 @layer utilities {
   .pattern-bg {
-    background-image: url('./assets/bali-pattern.png');
+    background-image: url('./assets/pop-up-bg.png');
     background-size: 400px;
     background-repeat: repeat;
     opacity: 0.08;

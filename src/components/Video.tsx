@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
+import thumb from "@/assets/metatah-thumb.png";
 
 const Video = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -16,10 +17,10 @@ const Video = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
             Video Edukasi Metatah dan Kesehatan Gigi
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-black">
             Pelajari tradisi dan perawatan gigi melalui video edukatif
           </p>
         </motion.div>
@@ -33,17 +34,21 @@ const Video = () => {
         >
           <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black group">
             {!isPlaying ? (
-              <div 
-                className="absolute inset-0 bg-gradient-to-br from-primary/90 to-secondary/90 flex items-center justify-center cursor-pointer transition-all hover:scale-105"
+              <div
+                className="absolute inset-0 bg-cover bg-center flex items-center justify-center cursor-pointer transition-all hover:scale-105"
+                style={{
+                  backgroundImage: `url(${thumb})`,
+                }}
                 onClick={() => setIsPlaying(true)}
               >
-                <div className="text-center">
+                <div className="absolute inset-0 bg-black/50" /> 
+                <div className="relative z-10 text-center">
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     className="inline-block"
                   >
-                    <div className="bg-white/20 backdrop-blur-sm p-8 rounded-full mb-6">
+                    <div className="bg-white/30 backdrop-blur-sm p-8 rounded-full mb-6">
                       <Play size={64} className="text-white" fill="white" />
                     </div>
                   </motion.div>
@@ -56,7 +61,7 @@ const Video = () => {
             ) : (
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                src="https://www.youtube.com/embed/uj1zEaPgItM?autoplay=1"
                 title="Video Edukasi Metatah"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
