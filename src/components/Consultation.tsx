@@ -48,7 +48,7 @@ const ConsultationSection = () => {
     const message = encodeURIComponent(
       "Halo Senyum Bali, saya ingin konsultasi tentang kesehatan gigi."
     );
-    window.open(`https://wa.me/6281234567890?text=${message}`, "_blank");
+    window.open(`https://wa.me/628980755798?text=${message}`, "_blank");
   };
 
   return (
