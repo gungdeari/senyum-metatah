@@ -306,7 +306,7 @@ const Education = () => {
           {/* TITLE */}
           <div className="flex items-center gap-3">
             <h2 className="text-3xl font-bold text-black">
-              Risiko Kesehatan Gigi Pasca-Metatah
+              Penanganan Sensitivitas Gigi Pasca-Metatah
             </h2>
           </div>
     
