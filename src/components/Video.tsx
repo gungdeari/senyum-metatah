@@ -71,7 +71,7 @@ const Video = () => {
             ) : (
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/uj1zEaPgItM?autoplay=1"
+                src="https://www.youtube.com/embed/DJwbwBQhCEw?autoplay=1"
                 title="Video Edukasi Metatah"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
