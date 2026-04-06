@@ -25,7 +25,7 @@ const ConsultationSection = () => {
     try {
       await emailjs.send(
         "service_fwbwqyr",
-        "template_q6mys2p",
+        "template_i6vk3wg",
         {
           from_name: formData.name,
           from_email: formData.email,
