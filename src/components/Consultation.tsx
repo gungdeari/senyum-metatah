@@ -24,14 +24,14 @@ const ConsultationSection = () => {
 
     try {
       await emailjs.send(
-        "service_j9e0f2q",
-        "template_nnie0al",
+        "service_fwbwqyr",
+        "template_q6mys2p",
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
         },
-        "idjLDVvUs8vREIW5W"
+        "Wo9ceb8CCbhJVeM0O"
       );
 
       setShowSuccessModal(true);
